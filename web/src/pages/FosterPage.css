@@ -1,0 +1,802 @@
+/* Foster Page Styles */
+.foster-page {
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.foster-hero {
+  background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.foster-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(249, 115, 22, 0.1), rgba(234, 88, 12, 0.1));
+  z-index: 1;
+}
+
+.foster-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.foster-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.foster-hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  opacity: 0.9;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Overview Section */
+.foster-overview {
+  padding: 80px 0;
+  background-color: #f9fafb;
+}
+
+.overview-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.overview-content h2 {
+  color: #1f2937;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.overview-content p {
+  color: #6b7280;
+  line-height: 1.7;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+}
+
+/* Foster Stats */
+.foster-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin: 50px 0;
+}
+
+.stat-card {
+  text-align: center;
+  padding: 40px 20px;
+  background: white;
+  color: #1f2937;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border: 2px solid #f3f4f6;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #f97316, #ea580c);
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+.stat-card h3 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: #1f2937;
+  background: linear-gradient(135deg, #f97316, #ea580c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.stat-card p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+  color: #374151;
+}
+
+/* Benefits Section */
+.foster-benefits {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  position: relative;
+}
+
+.foster-benefits::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(254, 243, 199, 0.3), rgba(253, 230, 138, 0.3));
+  z-index: 1;
+}
+
+.foster-benefits .container {
+  position: relative;
+  z-index: 2;
+}
+
+.foster-benefits h2 {
+  text-align: center;
+  color: #1f2937;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.benefit-card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid #f3f4f6;
+  position: relative;
+  overflow: hidden;
+}
+
+.benefit-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #f97316, #ea580c);
+}
+
+.benefit-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.benefit-icon {
+  font-size: 4rem;
+  margin-bottom: 25px;
+  display: block;
+}
+
+.benefit-card h3 {
+  color: #1f2937;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.benefit-card p {
+  color: #6b7280;
+  line-height: 1.7;
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+/* Requirements Section */
+.foster-requirements {
+  padding: 80px 0;
+  background: white;
+  position: relative;
+}
+
+.foster-requirements::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(249, 250, 251, 0.8));
+  z-index: 1;
+}
+
+.foster-requirements .container {
+  position: relative;
+  z-index: 2;
+}
+
+.foster-requirements h2 {
+  text-align: center;
+  color: #1f2937;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+.requirements-list {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border: 2px solid #f3f4f6;
+}
+
+.requirement-item {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #e5e7eb;
+  transition: background-color 0.3s ease;
+  border-radius: 8px;
+  margin: 5px 0;
+  padding-left: 15px;
+}
+
+.requirement-item:hover {
+  background-color: #fef3c7;
+}
+
+.requirement-item:last-child {
+  border-bottom: none;
+}
+
+.checkmark {
+  color: #f97316;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-right: 20px;
+  min-width: 25px;
+  background: #fef3c7;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.requirement-item span:last-child {
+  color: #374151;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.info-box {
+  background: linear-gradient(135deg, #fef3c7, #fde68a);
+  padding: 30px;
+  border-radius: 16px;
+  max-width: 700px;
+  margin: 0 auto;
+  border-left: 6px solid #f97316;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.info-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(254, 243, 199, 0.3), rgba(253, 230, 138, 0.3));
+  z-index: 1;
+}
+
+.info-box h3,
+.info-box p {
+  position: relative;
+  z-index: 2;
+}
+
+.info-box h3 {
+  color: #92400e;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.info-box p {
+  color: #92400e;
+  margin: 0;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+/* Responsibilities Section */
+.foster-responsibilities {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);
+  position: relative;
+}
+
+.foster-responsibilities::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(249, 250, 251, 0.5), rgba(243, 244, 246, 0.5));
+  z-index: 1;
+}
+
+.foster-responsibilities .container {
+  position: relative;
+  z-index: 2;
+}
+
+.foster-responsibilities h2 {
+  text-align: center;
+  color: #1f2937;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+.responsibilities-list {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border: 2px solid #f3f4f6;
+}
+
+.responsibility-item {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px 0;
+  border-bottom: 1px solid #e5e7eb;
+  transition: background-color 0.3s ease;
+  border-radius: 8px;
+  margin: 5px 0;
+  padding-left: 15px;
+}
+
+.responsibility-item:hover {
+  background-color: #fef3c7;
+}
+
+.responsibility-item:last-child {
+  border-bottom: none;
+}
+
+.bullet {
+  color: #f97316;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-right: 20px;
+  min-width: 25px;
+  line-height: 1.2;
+  background: #fef3c7;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.responsibility-item span:last-child {
+  color: #374151;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  font-weight: 500;
+}
+
+.support-info {
+  background: linear-gradient(135deg, #fef3c7, #fde68a);
+  padding: 30px;
+  border-radius: 16px;
+  max-width: 700px;
+  margin: 0 auto;
+  border-left: 6px solid #f97316;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.support-info::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(254, 243, 199, 0.3), rgba(253, 230, 138, 0.3));
+  z-index: 1;
+}
+
+.support-info h3,
+.support-info p {
+  position: relative;
+  z-index: 2;
+}
+
+.support-info h3 {
+  color: #92400e;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.support-info p {
+  color: #92400e;
+  margin: 0;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+/* FAQ Section */
+.foster-faq {
+  padding: 80px 0;
+  background: white;
+  position: relative;
+}
+
+.foster-faq::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(249, 250, 251, 0.9));
+  z-index: 1;
+}
+
+.foster-faq .container {
+  position: relative;
+  z-index: 2;
+}
+
+.foster-faq h2 {
+  text-align: center;
+  color: #1f2937;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+.faq-section {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  padding: 25px;
+  border-bottom: 1px solid #e5e7eb;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faq-section:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.faq-section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.faq-section h3 {
+  color: #1f2937;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: #f97316;
+}
+
+.faq-section p {
+  color: #6b7280;
+  line-height: 1.7;
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+/* Success Stories */
+.success-stories {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  position: relative;
+}
+
+.success-stories::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(254, 243, 199, 0.4), rgba(253, 230, 138, 0.4));
+  z-index: 1;
+}
+
+.success-stories .container {
+  position: relative;
+  z-index: 2;
+}
+
+.success-stories h2 {
+  text-align: center;
+  color: #1f2937;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+.stories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.story-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid #f3f4f6;
+  position: relative;
+}
+
+.story-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #f97316, #ea580c);
+}
+
+.story-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.story-image {
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+}
+
+.story-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.story-card:hover .story-image img {
+  transform: scale(1.05);
+}
+
+.story-content {
+  padding: 30px;
+}
+
+.story-content h3 {
+  color: #1f2937;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.story-content p {
+  color: #6b7280;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  font-size: 1.05rem;
+}
+
+.story-author {
+  color: #f97316;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+/* Final CTA */
+.foster-cta {
+  background: linear-gradient(135deg, #f97316, #ea580c);
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.foster-cta::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(249, 115, 22, 0.15), rgba(234, 88, 12, 0.15));
+  z-index: 1;
+}
+
+.foster-cta .container {
+  position: relative;
+  z-index: 2;
+}
+
+.foster-cta h2 {
+  font-size: 3rem;
+  margin-bottom: 25px;
+  font-weight: 800;
+}
+
+.foster-cta p {
+  font-size: 1.3rem;
+  margin-bottom: 50px;
+  opacity: 0.95;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-buttons .btn {
+  padding: 15px 35px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.cta-buttons .btn-primary {
+  background: white;
+  color: #f97316;
+  border: 2px solid white;
+}
+
+.cta-buttons .btn-primary:hover {
+  background: transparent;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.cta-buttons .btn-secondary {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.cta-buttons .btn-secondary:hover {
+  background: white;
+  color: #f97316;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .foster-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .foster-hero p {
+    font-size: 1rem;
+  }
+  
+  .overview-content h2,
+  .foster-benefits h2,
+  .foster-requirements h2,
+  .foster-responsibilities h2,
+  .foster-faq h2,
+  .success-stories h2,
+  .foster-cta h2 {
+    font-size: 2rem;
+  }
+  
+  .stories-grid {
+    grid-template-columns: 1fr;
+    margin: 0 20px;
+  }
+  
+  .foster-stats {
+    grid-template-columns: 1fr;
+  }
+  
+  .benefits-grid {
+    grid-template-columns: 1fr;
+    margin: 0 20px;
+  }
+  
+  .requirements-list,
+  .responsibilities-list,
+  .faq-section,
+  .info-box,
+  .support-info {
+    margin: 0 20px;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .foster-cta p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .foster-hero {
+    padding: 60px 0;
+  }
+  
+  .foster-hero h1 {
+    font-size: 1.8rem;
+  }
+  
+  .overview-content h2,
+  .foster-benefits h2,
+  .foster-requirements h2,
+  .foster-responsibilities h2,
+  .foster-faq h2,
+  .success-stories h2,
+  .foster-cta h2 {
+    font-size: 1.8rem;
+  }
+  
+  .requirements-list,
+  .responsibilities-list,
+  .faq-section,
+  .info-box,
+  .support-info {
+    margin: 0 10px;
+  }
+  
+  .stories-grid {
+    margin: 0 10px;
+  }
+  
+  .benefits-grid {
+    margin: 0 10px;
+  }
+} 
