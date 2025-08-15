@@ -17,7 +17,7 @@ const PetDetails = () => {
     const fetchPet = async () => {
       try {
         // Fetch the specific pet
-        const petResponse = await fetch(`http://localhost:5000/api/pets/${id}`)
+        const petResponse = await fetch(`https://pet-shielders-main.onrender.comapi/pets/${id}`)
         if (petResponse.ok) {
           const petData = await petResponse.json()
           setPet(petData)
@@ -27,7 +27,7 @@ const PetDetails = () => {
         }
 
         // Fetch all pets for similar pets section
-        const allPetsResponse = await fetch('http://localhost:5000/api/pets')
+        const allPetsResponse = await fetch('https://pet-shielders-main.onrender.com/api/pets')
         if (allPetsResponse.ok) {
           const allPetsData = await allPetsResponse.json()
           setAllPets(allPetsData)

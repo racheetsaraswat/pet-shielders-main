@@ -27,7 +27,7 @@ const ScheduleVisit = () => {
   useEffect(() => {
     const fetchPet = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/api/pets/${petId}`);
+        const response = await fetch(`https://pet-shielders-main.onrender.com/api/pets/${petId}`);
         if (response.ok) {
           const petData = await response.json();
           setPet(petData);
@@ -60,7 +60,7 @@ const ScheduleVisit = () => {
 
     try {
       // Send the visit request to the backend
-      const response = await fetch('http://localhost:5000/api/visits', {
+      const response = await fetch('https://pet-shielders-main.onrender.com/api/visits', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -11,7 +11,7 @@ const Home = () => {
   useEffect(() => {
     const fetchFeaturedPets = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/pets?limit=4');
+        const response = await fetch('https://pet-shielders-main.onrender.com/api/pets?limit=4');
         if (response.ok) {
           const pets = await response.json();
           setFeaturedPets(pets);

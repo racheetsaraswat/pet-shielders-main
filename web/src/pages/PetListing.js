@@ -29,7 +29,7 @@ const PetListing = () => {
         if (age) params.append('age', age)
         if (locationFilter) params.append('location', locationFilter)
 
-        const response = await fetch(`http://localhost:5000/api/pets?${params.toString()}`)
+        const response = await fetch(`https://pet-shielders-main.onrender.com/api/pets?${params.toString()}`)
         if (response.ok) {
           const petsData = await response.json()
           setPets(petsData)

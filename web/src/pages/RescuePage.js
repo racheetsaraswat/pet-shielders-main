@@ -40,7 +40,7 @@ const RescuePage = () => {
         imageUrl: formData.image ? formData.image.name : null,
       };
 
-      const response = await fetch('http://localhost:5000/api/rescue', {
+      const response = await fetch('https://pet-shielders-main.onrender.com/api/rescue', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
