@@ -59,7 +59,7 @@ const About = () => {
             <div className="team-member">
               <img src="owner.JPG" alt="Pranjal Prajapati" className="team-photo" />
               <h3>Pranjal Prajapati</h3>
-              <p className="team-role">Founder & Executive Director</p>
+              <p className="team-role">Backend Developer</p>
               <p className="team-bio">
                 Pranjal has over 1.5 years of experience in animal welfare and is passionate about creating sustainable
                 solutions to pet homelessness.
@@ -68,7 +68,7 @@ const About = () => {
             <div className="team-member">
               <img src="webm.jpg" alt="Racheet Saraswat" className="team-photo" />
               <h3>Racheet Saraswat</h3>
-              <p className="team-role">Website Manager</p>
+              <p className="team-role">Frontend Developer</p>
               <p className="team-bio">
                 Racheet oversees the day-to-day operations of our main Website facility and ensures all animals receive
                 proper care.
